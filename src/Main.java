@@ -3,6 +3,7 @@
 import generic.GenericsExempleList;
 import generic.GenericExempleMap;
 import generic.Box;
+import operaçõesList.ListaTarefa;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,5 +24,17 @@ public class Main {
 
         System.out.println("Valor na caixa integerBox: " + integerBox.get());
         System.out.println("Valor na caixa stringBox: " + stringBox.get());
+
+        ListaTarefa listaTarefa = new ListaTarefa();
+        listaTarefa.adicionarTarefa("Tarefa 1");
+        listaTarefa.adicionarTarefa("Tarefa 2");
+
+        listaTarefa.removerTarefa("Tarefa 2");
+
+        System.out.println("Total de tarfeas: " + listaTarefa.obterTotalTarefas());
+
+        listaTarefa.obterDescricaoTarefas();
+
+        System.out.println(listaTarefa.filtrarTarefa("Tarefa 1"));
     }
 }
