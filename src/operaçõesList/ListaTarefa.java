@@ -1,5 +1,6 @@
 package operaçõesList;
 
+import java.util.Collections;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,6 +41,13 @@ public class ListaTarefa {
             }
         }
         return tarefasFiltradas;
+    }
+
+    public void orderTarefas() {
+        Collections.sort(tarefaList);
+        for (Tarefa tarefa : tarefaList) {
+            System.out.println(tarefa.getDescricao());
+        }
     }
 
 }

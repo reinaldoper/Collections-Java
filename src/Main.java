@@ -26,6 +26,8 @@ public class Main {
         System.out.println("Valor na caixa stringBox: " + stringBox.get());
 
         ListaTarefa listaTarefa = new ListaTarefa();
+        listaTarefa.adicionarTarefa("Tarefa 12");
+        listaTarefa.adicionarTarefa("Tarefa 21");
         listaTarefa.adicionarTarefa("Tarefa 1");
         listaTarefa.adicionarTarefa("Tarefa 2");
 
@@ -36,5 +38,7 @@ public class Main {
         listaTarefa.obterDescricaoTarefas();
 
         System.out.println(listaTarefa.filtrarTarefa("Tarefa 1"));
+
+        listaTarefa.orderTarefas();
     }
 }

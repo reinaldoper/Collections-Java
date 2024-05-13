@@ -1,6 +1,6 @@
 package operaçõesList;
 
-public class Tarefa {
+public class Tarefa implements Comparable<Tarefa> {
     private String descricao;
 
     public Tarefa(String descricao) {
@@ -9,6 +9,10 @@ public class Tarefa {
 
     public String getDescricao() {
         return descricao;
+    }
+    @Override
+    public int compareTo(Tarefa outraTarefa) {
+        return this.descricao.compareTo(outraTarefa.descricao);
     }
 
     @Override
