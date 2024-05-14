@@ -4,6 +4,7 @@ import generic.GenericsExempleList;
 import generic.GenericExempleMap;
 import generic.Box;
 import operaçõesList.ListaTarefa;
+import operaçõesList.MostrarTarefasSetStream;
 
 public class Main {
     public static void main(String[] args) {
@@ -40,5 +41,8 @@ public class Main {
         System.out.println(listaTarefa.filtrarTarefa("Tarefa 1"));
 
         listaTarefa.orderTarefas();
+
+        MostrarTarefasSetStream mostrarTarefasSetStream = new MostrarTarefasSetStream();
+        mostrarTarefasSetStream.listTarefas();
     }
 }

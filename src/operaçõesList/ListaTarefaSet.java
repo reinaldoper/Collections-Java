@@ -36,4 +36,8 @@ public class ListaTarefaSet {
             System.out.println(tarefa.getDescricao());
         }
     }
+
+    public void obterDescricaoTarefa(){
+        System.out.println(tarefaSet);
+    }
 }

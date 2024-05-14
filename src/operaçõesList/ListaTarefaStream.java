@@ -27,4 +27,8 @@ public class ListaTarefaStream {
                 .sorted()
                 .collect(Collectors.toCollection(LinkedHashSet::new));
     }
+
+    public void obterDescricaoTarefa(){
+        System.out.println(tarefaSet);
+    }
 }
